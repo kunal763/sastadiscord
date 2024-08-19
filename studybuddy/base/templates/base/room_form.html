@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+{% comment %} if you want this generic form to go  to the page from where it arrived {% endcomment %}
+<form method="POST" action="">
+
+{% csrf_token %}
+{{form.as_p}}
+<input type="submit" value="SUBMIT"/>
+
+</form>
+{% endblock content %}

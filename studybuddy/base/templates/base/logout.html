@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <label >Are You Sure,you want logout</label>
+    <input type="submit" value="LOGOUT"/>
+    <label >NO</label>
+    <a href="{% url "home" %}">BACK</a>
+</form>
+
+
+
+{% endblock content %}
